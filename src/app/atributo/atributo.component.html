@@ -1,0 +1,26 @@
+<!-- <p>
+mascara-atributos-numericos works!
+</p> -->
+<div>
+  <form [formGroup]="formAtributo" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="nomeAtributo">Atributo:</label>
+      <input type="text" id="nomeAtributo" formControlName="nomeAtrib">
+    </div>
+    <div>
+      <label for="tipoAtributo">Tipo:</label>
+      <select name="" id="tipoAtributo" formControlName="tipoAtrib">
+        <option value="numerico">Numérico</option>
+        <option value="texto">Texto</option>
+      </select>
+    </div>
+    <div>
+      <label for="mascaraAtributo">Máscara:</label>
+      <input type="text" id="mascaraAtributo" formControlName="mascaraAtrib">
+    </div>
+    <div>
+      <button>Salvar</button>
+      <button type="reset" (click)="onReset()">Cancelar</button>
+    </div>
+  </form>
+</div>

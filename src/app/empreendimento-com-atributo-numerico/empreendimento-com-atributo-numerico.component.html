@@ -1,0 +1,15 @@
+<!-- <p>
+atributo-numerico works!
+</p> -->
+<div>
+  <form [formGroup]="formEmpreendimentoComAtributoNumerico" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="atribNumerico">Atributo Numérico:</label>
+      <input type="text" id="atribNumerico" formControlName="nomeAtributoNumerico">
+    </div>
+    <div>
+      <button>Ok</button>
+      <button type="reset" (click)="onReset()">Cancelar</button>
+    </div>
+  </form>
+</div>

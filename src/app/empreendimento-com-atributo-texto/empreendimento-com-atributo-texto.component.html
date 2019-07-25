@@ -1,0 +1,15 @@
+<!-- <p>
+atributo-texto works!
+</p> -->
+<div>
+	<form [formGroup]="formEmpreendimentoComAtributoTexto" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="atribTextoNome">Atributo Texto:</label>
+      <input type="text" id="atribTextoNome" formControlName="nomeAtributoTexto">      
+    </div>
+    <div>
+      <button>Ok</button>
+      <button type="reset" (click)="onReset()">Cancelar</button>
+    </div>
+	</form>
+</div>
